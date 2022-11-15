@@ -8,9 +8,25 @@ public class DrillingMachine {
 
     public DrillingMachine() {
         this.name = "Standard_DM-Object";
-        this.watt = (int) (800 + Math.random()*1200);
-        this.age = (int) Math.random()*10;
-        this.price = 50 + Math.random()*450;
+        this.watt = (int) (800 + Math.random()*1201);
+        this.age = (int) Math.random()*11;
+        this.price = ((int)((50 + Math.random()*450)*100))/100d;
+    }
+
+    public int getWatt() {
+        return watt;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public boolean isBroken() {
+        return broken;
     }
 
     // task 2a)

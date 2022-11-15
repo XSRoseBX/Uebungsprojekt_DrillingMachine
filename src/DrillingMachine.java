@@ -55,7 +55,7 @@ public class DrillingMachine {
         if (watt > 0) {
             this.watt += watt;
             if (watt > 100) { this.price *= 1.05; }
-        } else {
+        } else if (watt < 0) {
             this.watt += watt;
             this.price *= 0.9;
         }

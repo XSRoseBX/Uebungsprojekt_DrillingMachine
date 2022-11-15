@@ -30,7 +30,12 @@ public class DrillingMachine {
         this.broken = true;
     }
     // task 2b)
-    public void repair() { this.broken = false; this.price = this.price / 2; }
+    public void repair() {
+        if (this.broken == true) {
+            this.broken = false;
+            this.price = this.price / 2;
+        }
+    }
     // task 2c)
     public void aging() {
         this.age += 1;

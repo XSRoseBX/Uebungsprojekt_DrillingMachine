@@ -92,8 +92,8 @@ public class DrillingMachine {
     // task 5c)
     public String getInfo() {
         return ("Name: " + this.name +
-                "Age: " + this.age +
-                "Watts: " + this.watt +
-                "Price: " + this.price);
+                " - Age: " + this.age +
+                " - Watts: " + this.watt +
+                " - Price: " + this.price);
     }
 }

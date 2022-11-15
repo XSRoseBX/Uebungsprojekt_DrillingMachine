@@ -91,9 +91,9 @@ public class DrillingMachine {
     }
     // task 5c)
     public String getInfo() {
-        return ("I am " + this.name + " and I am "
-                + this.age + " years old. I work perfectly with my "
-                + this.watt + " watts. If you're interested you can buy me for "
-                + this.price + " euros!");
+        return ("Name: " + this.name +
+                "Age: " + this.age +
+                "Watts: " + this.watt +
+                "Price: " + this.price);
     }
 }

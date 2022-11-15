@@ -13,21 +13,17 @@ public class DrillingMachine {
         this.price = ((int)((50 + Math.random()*450)*100))/100d;
     }
 
-    public int getWatt() {
-        return watt;
-    }
+    // all getters
+    public int getWatt() { return watt; }
+    public String getName() { return name; }
+    public int getAge() { return age; }
+    public boolean isBroken() { return broken; }
 
-    public String getName() {
-        return name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public boolean isBroken() {
-        return broken;
-    }
+    // all setters
+    public void setWatt(int watt) { this.watt = watt; }
+    public void setName(String name) { this.name = name; }
+    public void setAge(int age) { this.age = age; }
+    public void setPrice(double price) { this.price = price; }
 
     // task 2a)
     public void becomeBroken() {

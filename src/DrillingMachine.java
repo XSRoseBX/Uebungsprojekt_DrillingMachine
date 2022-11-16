@@ -65,13 +65,10 @@ public class DrillingMachine {
     public double getPrice() { return this.price; }
     // task 4b)
     public boolean isInexpensive() {
-        if (this.watt > 500 && this.price < 80) {
-            return true;
-        }
-        return false;
+        return (this.watt > 500 && this.price < 80);
     }
     // task 4c)
-    public double getPricePerWatt() { return watt / price; }
+    public double getPricePerWatt() { return price / watt; }
 
     // task 5a)
     public boolean increasePriceByPercentage (double percentage) {
